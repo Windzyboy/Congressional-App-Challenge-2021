@@ -15,7 +15,7 @@ function createWindow() {
     });
 
     mainWindow.setTitle("School Bus Map")
-    mainWindow.loadFile('index.html');
+    mainWindow.loadFile('page/index.html');
 }
 
 
