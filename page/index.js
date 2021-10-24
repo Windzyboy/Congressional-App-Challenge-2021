@@ -6,3 +6,7 @@ function initMap() {
     zoom: 14,
   });
 }
+
+function reloadMapIframe() {
+  document.getElementById('map').contentWindow.location.reload();
+}

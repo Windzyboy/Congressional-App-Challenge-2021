@@ -14,23 +14,27 @@
                 <img style="margin: 0;" src="directions_bus_yellow_24dp.svg">
             </a>
             <a href="about.html">
-                <h1>About</h1>
+                <h1 style="font-size: 32px;">About</h1>
             </a>
-            <a href="about.html">
-                <h1>About</h1>
+            <a href="disclaimer.html">
+                <h1 style="font-size: 20px;">Disclaimer</h1>
             </a>
         </nav>
         <div id="dpage">
 
-            <h1 class="center">Bus Map</h1>
-            <div id="map"></div>
+            <div class="dtitle">
+                <h1 class="ptitle" style="text-decoration: underline dotted #fff 1px; cursor: help;" title="This is a proof of concept. This map doesn't work as intended, but will in the future.">Bus Map</h1>
+            </div>
+            <!-- <div id="map"></div> -->
             <script src="index.js" async></script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly&channel=2" async></script>
-        </div>
-    <script>
-        // REMOVE ON LAUNCH
-        //setTimeout( () => { window.location.reload(); }, 1000)
-    </script>
-    
+            <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly&channel=2" async></script> -->
+            <iframe 
+                    id="map"
+                    height="512"
+                    loading="lazy" allowfullscreen
+                    src="https://www.google.com/maps/embed/v1/directions?origin=place_id:EilDdnUgSGlnaCBTY2hvb2wsIEhpbmVzYnVyZywgVlQgMDU0NjEsIFVTQSIuKiwKFAoSCQVIE-wYgLVMEfF2nckPgYBrEhQKEglBoI0feH-1TBEsrq6B0S3kCg&destination=place_id:ChIJQ46H-RyAtUwRVrE-jfzFGDY&key=AIzaSyBoUctnxnSvj4Uwi-6LXPeG0psDRl-M9dQ">
+            </iframe>
+            <button onClick="reloadMapIframe()"><p>Issues? Reload map</p></button>
+        </div>    
     </body>
 </html>
