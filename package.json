@@ -2,8 +2,8 @@
   "name": "app-challenge",
   "productName": "app-challenge",
   "version": "1.0.0",
-  "description": "My Electron application description",
-  "main": "src/index.js",
+  "description": "Our submission to the Congressional App Challenge 2021",
+  "main": "index.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
