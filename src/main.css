@@ -17,9 +17,9 @@ body {
 }
 
 #dpage {
+    -webkit-app-region: none;
     border-radius: 10px;
     background-color: #eee;
-    -webkit-app-region: drag;
     flex-shrink: 1;
     flex-grow: 1;
     display: flex;
@@ -30,13 +30,17 @@ body {
     margin-left: 0px;
 }
 
+/* #dpage::-webkit-scrollbar {
+    -webkit-app-region: none;
+} */
+
 #dpage * {
     -webkit-app-region: none;
 }
 
 #map {
     /* -webkit-app-region: none; */
-    border: black solid;
+    border: #000 solid;
     border-width: 4px;
     border-radius: 10px;
     flex-shrink: 0;
@@ -84,7 +88,7 @@ nav a {
 }
 
 nav a h1 {
-    color: #222222;
+    color: #000;
     text-decoration: underline;
     text-decoration-color: #ffbf00;
 }
@@ -115,23 +119,10 @@ a {
         color: #fff;
     }
     nav {
-        overflow-x: hidden;
-        overflow-y: auto;
-        border-radius: 10px;
         background-color: #333;
-        display: flex;
-        flex-flow: column nowrap;
-        flex-shrink: 0;
-        /* flex-grow: 1;  */
-        height: calc(100vh - 32px);
-        /* height: auto; */
-        width: 128px;
-        margin: 16px;
     }
     nav a h1 {
         color: #eee;
-        text-decoration: underline;
-        text-decoration-color: #ffbf00;
     }
 }
 

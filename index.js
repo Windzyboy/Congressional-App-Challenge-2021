@@ -65,12 +65,12 @@ app.whenReady().then( () => {
         if (BrowserWindow.getAllWindows().length === 0) createWindow() });
     
     // unbind devtools
-    globalShortcut.register('Control+Shift+I', () => {
-        return false;
-    });
-    globalShortcut.register('Control+W', () => {
-        return false;
-    });
+    // globalShortcut.register('Control+Shift+I', () => {
+    //     return false;
+    // });
+    // globalShortcut.register('Control+W', () => {
+    //     return false;
+    // });
 
 });
 
