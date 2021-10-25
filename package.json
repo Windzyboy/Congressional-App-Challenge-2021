@@ -16,7 +16,7 @@
     "name": "Windzyboy",
     "email": "63932310+Windzyboy@users.noreply.github.com"
   },
-  "license": "Apache 2.0",
+  "license": "GPL-3.0",
   "config": {
     "forge": {
       "packagerConfig": {
