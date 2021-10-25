@@ -36,7 +36,7 @@ body {
 
 #map {
     /* -webkit-app-region: none; */
-    border: #000 solid;
+    border: black solid;
     border-width: 4px;
     border-radius: 10px;
     flex-shrink: 0;
@@ -58,7 +58,7 @@ nav {
     overflow-x: hidden;
     overflow-y: auto;
     border-radius: 10px;
-    background-color: #333;
+    background-color: #eee;
     display: flex;
     flex-flow: column nowrap;
     flex-shrink: 0;
@@ -84,11 +84,10 @@ nav a {
 }
 
 nav a h1 {
-    color: #fff;
+    color: #222222;
     text-decoration: underline;
     text-decoration-color: #ffbf00;
 }
-
 
 a {
     -webkit-app-region: none;
@@ -105,7 +104,6 @@ a {
     align-self: center;
 }
 
-
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #2222227f;
@@ -115,6 +113,25 @@ a {
     }
     h1, h2, p {
         color: #fff;
+    }
+    nav {
+        overflow-x: hidden;
+        overflow-y: auto;
+        border-radius: 10px;
+        background-color: #333;
+        display: flex;
+        flex-flow: column nowrap;
+        flex-shrink: 0;
+        /* flex-grow: 1;  */
+        height: calc(100vh - 32px);
+        /* height: auto; */
+        width: 128px;
+        margin: 16px;
+    }
+    nav a h1 {
+        color: #eee;
+        text-decoration: underline;
+        text-decoration-color: #ffbf00;
     }
 }
 
