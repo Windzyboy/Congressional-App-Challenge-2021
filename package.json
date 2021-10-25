@@ -19,7 +19,9 @@
   "license": "Apache 2.0",
   "config": {
     "forge": {
-      "packagerConfig": {},
+      "packagerConfig": {
+        "icon": "icon.ico"
+      },
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
