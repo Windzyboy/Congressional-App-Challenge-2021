@@ -1,6 +1,6 @@
 {
   "name": "app-challenge",
-  "productName": "app-challenge",
+  "productName": "BusMap",
   "version": "1.0.0",
   "description": "Our submission to the Congressional App Challenge 2021",
   "main": "index.js",

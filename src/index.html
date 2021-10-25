@@ -23,18 +23,22 @@
         <div id="dpage">
 
             <div class="dtitle">
-                <h1 class="ptitle" style="text-decoration: underline dotted #fff 1px; cursor: help;" title="This is a proof of concept. This map doesn't work as intended, but will in the future.">Bus Map</h1>
+                <!--  style="text-decoration: underline dotted #fff 1px; cursor: help;" title="This is a proof of concept. This map doesn't work as intended, but will in the future." -->
+                <h1 class="ptitle">Bus Map</h1>
             </div>
-            <!-- <div id="map"></div> -->
-            <script src="index.js" async></script>
             <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly&channel=2" async></script> -->
             <iframe 
+                    name="map"
                     id="map"
                     height="512"
                     loading="lazy" allowfullscreen
                     src="https://www.google.com/maps/embed/v1/directions?origin=place_id:EilDdnUgSGlnaCBTY2hvb2wsIEhpbmVzYnVyZywgVlQgMDU0NjEsIFVTQSIuKiwKFAoSCQVIE-wYgLVMEfF2nckPgYBrEhQKEglBoI0feH-1TBEsrq6B0S3kCg&destination=place_id:ChIJQ46H-RyAtUwRVrE-jfzFGDY&key=AIzaSyBoUctnxnSvj4Uwi-6LXPeG0psDRl-M9dQ">
             </iframe>
-            <button onClick="reloadMapIframe()"><p>Issues? Reload map</p></button>
+            <a style="align-self: center; text-align: center; text-decoration: none;" target="map" href="https://www.google.com/maps/embed/v1/directions?origin=place_id:EilDdnUgSGlnaCBTY2hvb2wsIEhpbmVzYnVyZywgVlQgMDU0NjEsIFVTQSIuKiwKFAoSCQVIE-wYgLVMEfF2nckPgYBrEhQKEglBoI0feH-1TBEsrq6B0S3kCg&destination=place_id:ChIJQ46H-RyAtUwRVrE-jfzFGDY&key=AIzaSyBoUctnxnSvj4Uwi-6LXPeG0psDRl-M9dQ">
+                <button>
+                    <p>Having issues? Reload the map.</p>
+                </button>
+            </a>
         </div>    
     </body>
 </html>
