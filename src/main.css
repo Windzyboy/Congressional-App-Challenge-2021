@@ -14,7 +14,6 @@ body {
     display: flex;
     justify-content: stretch;
     -webkit-app-region: drag;
-    border-inline-start: solid #000 2px;
 }
 
 #dpage {
