@@ -1,11 +1,17 @@
 @font-face {
     font-family: "Roboto";
+    font-weight: 400;
     src: url(fonts/Roboto-Regular.ttf);
 }
 
 @font-face {
     font-family: "Archivo Black";
     src: url(fonts/ArchivoBlack-Regular.ttf);
+}
+
+* {
+    font-family: "Roboto";
+    font-weight: 400;
 }
 
 body {
@@ -52,9 +58,10 @@ body {
     width: 75%;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
     color: #303030;
-    font-family: 'Roboto', sans-serif;
     margin: 16px;
 }
 
@@ -110,9 +117,9 @@ a {
 }
 
 .ptitle {
-    font-family: 'Lexend Peta', sans-serif;
+    font-family: "Lexend Peta", sans-serif;
     text-transform: uppercase;
-    letter-spacing: .0625em;
+    letter-spacing: 0.0625em;
 }
 
 .dtitle {
@@ -127,7 +134,9 @@ a {
     #dpage {
         background-color: #222222;
     }
-    h1, h2, p {
+    h1,
+    h2,
+    p {
         color: #eee;
     }
     nav {
@@ -162,9 +171,9 @@ button {
 
 button * {
     margin: 8px;
-    color: #000
+    color: #000;
 }
 
 button:active {
-    background-color: #BF8C00;
+    background-color: #bf8c00;
 }
