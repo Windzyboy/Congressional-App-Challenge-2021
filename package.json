@@ -1,56 +1,23 @@
 {
-  "name": "app-challenge",
-  "productName": "BusMap",
-  "version": "1.0.0",
-  "description": "Our submission to the Congressional App Challenge 2021",
-  "main": "index.js",
-  "scripts": {
-    "start": "electron-forge start",
-    "package": "electron-forge package",
-    "make": "electron-forge make",
-    "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
-  },
-  "keywords": [],
-  "author": "Windzyboy <63932310+Windzyboy@users.noreply.github.com>",
-  "config": {
-    "forge": {
-      "packagerConfig": {
-        "icon": "icon.ico"
-      },
-      "makers": [
-        {
-          "name": "@electron-forge/maker-squirrel",
-          "config": {
-            "name": "app_challenge"
-          }
-        },
-        {
-          "name": "@electron-forge/maker-zip",
-          "platforms": [
-            "darwin"
-          ]
-        },
-        {
-          "name": "@electron-forge/maker-deb",
-          "config": {}
-        },
-        {
-          "name": "@electron-forge/maker-rpm",
-          "config": {}
-        }
-      ]
+    "name": "app-challenge",
+    "productName": "BusMap",
+    "version": "1.0.0",
+    "description": "Our submission to the Congressional App Challenge 2021",
+    "main": "index.js",
+    "keywords": [],
+    "author": "Windzyboy <63932310+Windzyboy@users.noreply.github.com>",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Windzyboy/Congressional-App-Challenge-2021.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Windzyboy/Congressional-App-Challenge-2021/issues"
+    },
+    "homepage": "https://github.com/Windzyboy/Congressional-App-Challenge-2021#readme",
+    "dependencies": {
+        "electron": "^18.0.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
     }
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Windzyboy/Congressional-App-Challenge-2021.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Windzyboy/Congressional-App-Challenge-2021/issues"
-  },
-  "homepage": "https://github.com/Windzyboy/Congressional-App-Challenge-2021#readme",
-  "dependencies": {
-    "electron": "^18.0.0"
-  }
 }
